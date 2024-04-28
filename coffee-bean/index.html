@@ -160,26 +160,26 @@
                     <label for="full-name">Full Name</label>
                     <input type="text" name="full_name" id="full-name" placeholder="Last Name First Name">
                     <label for="email-address">Email Address</label>
-                    <input type="text" name="email_address" id="email-address" placeholder="mail@mail.com">
+                    <input type="email" name="email_address" id="email-address" placeholder="mail@mail.com">
                     <label for="phone-number">Phone Number</label>
                     <input type="number" name="phone_number" id="phone-number" placeholder="(+63) 912345678">
                     <h4>Reservation Details</h4>
                     <label for="number-of-guest">Number of Guest</label>
-                    <select name="number_of_guest" id="number-of-guest" placeholder="1">
+                    <select name="number_of_guest" id="number-of-guest">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
                     <label for="reservation-date">Reservation Date</label>
                     <input type="date" name="reservation_date" id="reservation-date" placeholder="mm/dd/yyyy">
+                    <h4>Reservation Time</h4>
                     <div class="res-time">
-                        <h4>Reservation Time</h4>
                         <input type="radio" name="reservation_time" id="morning" value="morning">
-                        <label for="morning"><p>Morning</p></label>
+                        <label for="morning">Morning</label>
                         <input type="radio" name="reservation_time" id="afternoon" value="afternoon">
-                        <label for="afternoon"><p>Afternoon</p></label>
+                        <label for="afternoon">Afternoon</label>
                         <input type="radio" name="reservation_time" id="night" value="night">
-                        <label for="night"><p>Night</p></label>
+                        <label for="night">Night</label>
                     </div>
                 </div>
                 <div class="form-group">
@@ -190,60 +190,64 @@
                     <label for="credit-card-name">Full Name</label>
                     <input type="text" name="credit_card_name" id="credit-card-name" placeholder="John Doe">
                     <label for="credit-card-number">Credit Card Number</label>
-                    <input type="text" name="credit_card_number" id="credit-card-number" placeholder="1234567890">
+                    <input type="number" name="credit_card_number" id="credit-card-number" placeholder="1234567890">
                     <div class="res-agreement">
                         <input type="checkbox" name="agree" id="agree" value="agree">
                         <label for="agree">I agree in the terms and conditions.</label>
                     </div>
-                    <input type="submit" name="send" value="send">
+                    <input type="submit" name="send" id="send" value="send">
                 </div>
             </form>
         </section>
         <footer class="footer">
-            <div class="fotter-contents">
+            <div class="footer-contents">
                 <div class="footer-widgets">
                     <h3>opening hours</h3>
                     <table>
-                        <tr>
-                            <th>Day</th>
-                            <th>••••••••••</th>
-                            <th>Availability</th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td>••••••••••</td>
-                            <td>Closed</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>••••••••••</td>
-                            <td>09:00-22:00</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td>••••••••••</td>
-                            <td>Closed</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td>••••••••••</td>
-                            <td>09:00-22:00</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>••••••••••</td>
-                            <td>09:00-22:00</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td>••••••••••</td>
-                            <td>09:00-22:00</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td>••••••••••</td>
-                            <td>09:00-22:00</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>••••••••••</th>
+                                <th>Availability</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>••••••••••</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>••••••••••</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>••••••••••</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>••••••••••</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>••••••••••</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>••••••••••</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>••••••••••</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class="footer-widgets">
@@ -267,8 +271,10 @@
                         Raymond Bouleyard 224, New York
                     </p>
                     <h3>the last standart post</h3>
-                    <input type="text" name="search" id="search">
-                    <input type="submit" name="search" value="search">
+                    <form action="" method="" class="footer-form">
+                        <input type="text" name="search" id="search">
+                        <input type="submit" name="search" id="search" value="search">
+                    </form>
                 </div>
                 <div class="footer-widgets">
                     <h3>other locations</h3>
@@ -287,7 +293,17 @@
                 </div>
             </div>
             <div class="footer-social">
-                
+                <div class="social-widgets">
+                    <h3>coffee bean</h3>
+                </div>
+                <div class="social-widgets">
+                    <img src="assets/images/icon-fb.png" alt="sns-icon">
+                    <img src="assets/images/icon-ig.png" alt="sns-icon">
+                    <img src="assets/images/icon-tw.png" alt="sns-icon">
+                </div>
+                <div class="social-widgets">
+                    <p>&copy 2021 | Kredo IT Abroad</p>
+                </div>
             </div>
         </footer>
     </div>
